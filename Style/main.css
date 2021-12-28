@@ -13,7 +13,7 @@ body {
 .section1 {
   height: 100vh;
   position: relative;
-  background: cornflowerblue;
+  background: linear-gradient(264deg, #13a5cc 25%, #007dff 79%);
   padding: 15px 130px 115px 130px;
 }
 
@@ -30,13 +30,8 @@ body {
   margin-bottom: 120px;
 }
 
-.section1 header h1 {
+.section1 header .headh1 {
   font-family: cursive;
-}
-
-.section1 header .logo {
-  width: 150px;
-  height: 100px;
 }
 
 .section1 header nav {
@@ -210,6 +205,7 @@ body {
 
 .section1 #menu ul {
   position: relative;
+  padding: 5px;
   margin-top: 50px;
   z-index: 2;
 }
@@ -277,6 +273,14 @@ body {
   position: absolute;
   top: 160px;
   right: 585px;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-name: sharik;
+          animation-name: sharik;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .section1 .kokdumaloq {
@@ -287,6 +291,14 @@ body {
   position: absolute;
   top: 585px;
   right: 615px;
+  -webkit-animation-name: sharik;
+          animation-name: sharik;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .section1 .kompimg {
@@ -315,13 +327,35 @@ body {
   z-index: 0;
 }
 
+@media (max-width: 1400px) {
+  .section1 .bigdumaloq {
+    width: 450px;
+    height: 720px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section1 .bigdumaloq {
+    width: 400px;
+    height: 680px;
+  }
+}
+
 .section1 .modal {
   width: 100%;
   height: 100vh;
   position: absolute;
+  padding: 100px 200px 200px 200px;
   margin: auto;
   z-index: 100;
   background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 30px;
 }
 
 .section1 .modal .close {
@@ -353,5 +387,39 @@ body {
   top: 50%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.section1 .modal .saytlar1 {
+  width: 300px;
+  height: 350px;
+  background: red;
+  padding: 10px;
+}
+
+.section1 .modal .saytlar1 img {
+  width: 100%;
+  height: 40%;
+}
+
+@-webkit-keyframes sharik {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes sharik {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=main.css.map */

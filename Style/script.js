@@ -24,7 +24,7 @@ function kechasi() {
     menucolor.style.background = "#0041fa"
 
     let buttonbg = document.getElementById("head-btn")
-    buttonbg.style.background = "#5115b1"
+    buttonbg.style.background = "red"
 
     let bigdumaloq = document.getElementById("bigdumaloq")
     bigdumaloq.style.background = "#13561e"
@@ -42,7 +42,7 @@ function kechasiboldi() {
     kech.style.display = "block"
 
     let bgcolor1 = document.getElementById("bg")
-    bgcolor1.style.background = "cornflowerblue"
+    bgcolor1.style.background = "linear-gradient(264deg, rgba(19,165,204,1) 25%, rgba(0,125,255,1) 79%)"
 
     let menucolor = document.getElementById("menu")
     menucolor.style.background = "rgb(0, 192, 250)"
@@ -67,7 +67,6 @@ function closs() {
     let none = document.getElementById("menu2")
     none.style.display = "none"
 }
-
 
 function btn() {
     let hedbtn = document.getElementById("head-btn")
