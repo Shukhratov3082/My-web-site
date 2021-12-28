@@ -271,10 +271,10 @@ background: linear-gradient(264deg, rgba(19,165,204,1) 25%, rgba(0,125,255,1) 79
        margin:  auto;
        z-index: 100;
        background-color: white;
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-template-rows: 1fr 1fr;
-       gap: 30px;
+    //    display: grid;
+    //    grid-template-columns: 1fr 1fr 1fr;
+    //    grid-template-rows: 1fr 1fr;
+    //    gap: 30px;
    
        .close{
            position: absolute;

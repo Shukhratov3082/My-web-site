@@ -58,10 +58,11 @@ function kechasiboldi() {
 }
 
 let myreposity = document.getElementById("my-reposity"),
-    modal = document.querySelector('.modal');
+    modal = document.getElementById("menu2");
 
 myreposity.addEventListener('click', function () {
     modal.style.display = "block";
+
 })
 function closs() {
     let none = document.getElementById("menu2")
