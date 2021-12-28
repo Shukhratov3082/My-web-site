@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: #000;
+   
+    font-family: sans-serif;
+}
+.section1{
+    height: 100vh;
+    position: relative;
+    background: cornflowerblue;
+    padding: 15px 130px 115px 130px;
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    h1{
+        font-family: cursive;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
+    nav{
+    display: flex;
+    gap: 35px;
+    font-family: monospace;
+    font-weight: 600;
+        a{
+            text-decoration: none;
+            padding: 0px 20px;
+            color: white;
+            font-size: 42px;
+            
+            &:hover{
+                border-radius: 50px;
+             
+                box-shadow: 0 1px 10px 1px #2167e5;
+            }
+        }
+    }
+  button{
+    background: #35d700;
+      padding: 15px 40px;
+      border-radius: 25px;
+      border: none;
+      color: white;
+      margin: 0 85px 0 0;
+      padding: 15px 45px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: monospace;
+      transition: 0.5s;
+      z-index: 2;
+      cursor: pointer;
+     
+      &:hover{
+        background: #336462;
+      }
+      &:focus{
+          transition: 0s;
+          box-shadow: 0px 0px 7px 6px #0528c2b5;
+      }
+  }
+ }
+    #icon {
+       position: absolute;
+       top: 28px;
+       right: 50px;
+       width: 50px;
+       height: 50px;
+       background: white;
+       border-radius: 5px;
+       cursor: pointer;
+       display: flex;
+       justify-content: center;
+       transition: 0.5s;
+       z-index: 51;
+
+         span:first-child{
+             position: absolute;
+             width: 25px;
+             height: 2px;
+             top: 13px;
+             background: #000;    
+             transition: 0.5s;   
+         }
+         span:nth-child(2){
+             position: absolute;
+             width: 25px;
+             height: 2px;
+             background: #000;
+            top: 25px;
+            transition: 0.5s;
+         }
+         span:last-child{
+             position: absolute;
+             width: 25px;
+             height: 2px;
+             background: #000;
+            top: 36px;
+            transition: 0.5s;
+         } 
+    }
+
+.active#icon span:first-child{
+    transition: 0.3s;
+    transform: rotate(45deg);
+    width: 35px;
+    top: 25px;
+    background: white;
+}
+.active#icon span:nth-child(2) {display: none;}
+.active#icon{background: red;}
+.active#icon span:last-child {
+    transition: 0.3s;
+    transform: rotate(-45deg);
+    background: white;
+    width: 35px;
+    top: 25px;
+    box-shadow: none;
+}
+
+    #menu {
+       position: fixed;
+       top: 0;
+       right: -400px;
+       width: 400px;
+       height: 100vh;
+       background: rgb(0, 192, 250);
+       padding: 100px 0;
+       text-align: center;
+       transition: 0.5s;
+       z-index: 50;
+       .video1{
+        position: absolute;
+        height: 100vh;
+        top: 2px;
+        right: 10px;
+        left: 0px;
+        filter: blur(5px);
+      
+       }
+
+    
+          .moon{
+              position: absolute;
+              width: 48px;
+              top: 35px;
+              left: 30px;
+              
+          }
+          .moon-black{
+              position: absolute;
+              width: 48px;
+              top: 35px;
+              left: 30px;
+              display: none;
+          }
+              ul {
+                  position: relative;
+                  margin-top: 50px;
+                  z-index: 2;
+   
+                 li {
+                     list-style: none;
+                     color: white;
+                     line-height: 100px;
+                     font-size: 2rem;
+                     font-weight: 600;
+                     transition: 0.5s;
+                     cursor: pointer;
+             
+                       &:hover {
+                           background: rgb(22, 1, 138);
+                       }
+                   }
+               }
+
+              &.active#menu {
+               right: 0;
+              }
+         }
+
+    h1{
+        font-size: 55px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color:white;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 20px;
+        font-family: sans-serif;
+        line-height: 150%;
+        color: white;
+    }
+    button{
+        font-size: 25px;
+        font-weight: bold;
+        border: 3px solid #ffc107;
+        margin-top: 20px;
+    }
+    .komp{
+        position: absolute;
+        right: 100px;
+        top:150px;
+        z-index: 2;
+    }
+    .oqdumaloq{
+        position: absolute;
+        top: 467px;
+        right: 186px;
+        z-index: 1;
+    }
+    .sarudumaloq{
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background: #f4d25b;
+        position: absolute;
+        top: 160px;
+        right: 585px;
+    }
+    .kokdumaloq{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #5956e9;
+        position: absolute;
+        top: 585px;
+        right: 615px;
+    }
+    .kompimg{
+        position: absolute;
+        right: 50px;
+        top: 160px;
+        z-index: 3;
+    }
+    .kompimg2{
+        position: absolute;
+        top: 455px;
+        right: 510px;
+        z-index: 3;
+    }
+    .bigdumaloq{
+        width: 477px;
+        height: 750px;
+        position: absolute;
+        background: #5956e9;
+        clip-path: circle(65% at 90% 50%);
+        top: 0px;
+        right: 0;
+        z-index: 0;
+    }
+   .modal{
+       width: 100%;
+       height: 100vh;
+       position: absolute;
+       margin:  auto ;
+       z-index: 100;
+       background-color: white;
+       
+       .close{
+           position: absolute;
+           top: 20px;
+           right: 25px;
+           width: 35px;
+           height: 35px;
+           border-radius: 5px;
+           cursor: pointer;
+           opacity: 1;
+             span:first-child{
+                 position: absolute;
+                 width: 35px;
+                 height: 2px;
+                 top: 50%;
+                 background:red;     
+                 transform: rotate(45deg);
+             }
+         
+             span:last-child{
+                 position: absolute;
+                 width: 35px;
+                 height: 2px;
+                 background:red;
+                 top: 50%;
+                 transform: rotate(-45deg);       
+             } 
+        }
+    }  
+}
+
+
+
+
+
