@@ -61,7 +61,8 @@ let myreposity = document.getElementById("my-reposity"),
     modal = document.getElementById("menu2");
 
 myreposity.addEventListener('click', function () {
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    modal.style.flexWrap = "wrap"
 
 })
 function closs() {
