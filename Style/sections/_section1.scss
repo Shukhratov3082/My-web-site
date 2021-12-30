@@ -299,6 +299,7 @@
        z-index: 100;
        background: linear-gradient(320deg, #7ab5ff 31%, #59a2f3 54%, #9cc6fb 76%);
        gap: 30px;
+       overflow: hidden;
 
        .close{
            position: absolute;
@@ -384,7 +385,7 @@
                 font-family: cursive;
                 animation-name: textanimation;
                 animation-iteration-count: infinite;
-                animation-duration: 5s;
+                animation-duration: 4s;
                 @keyframes textanimation {
                     0%{
                         color: rgb(0, 47, 255);
