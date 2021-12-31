@@ -65,6 +65,48 @@ myreposity.addEventListener('click', function () {
     modal.style.flexWrap = "wrap"
 
 })
+let games = document.getElementById("games")
+games.onclick = function () {
+    let firstName = prompt("Salom ismingizni kiriting")
+    let firstname2 = alert(`${firstName} bu yerda siz bot oylagan random raqamini topishingiz kerak boladi`)
+    let userNumber = prompt("Siz 5 dan katta son kiriting men shuni random qilaman")
+    let counter = 0;
+    let maxTries = 5;
+
+    if (userNumber >= 5) {
+        let randomNumber = Math.floor(Math.random() * userNumber + 1);
+
+
+        while (attempts != randomNumber) {
+
+            var attempts = prompt(`${firstName} siz 1 dan ${userNumber} bo'lgan sonlarni kiriting`);
+
+            counter += 1;
+
+            if (counter > maxTries) {
+                alert(`${firstName} siz yutqazdingiz F5  bosib qayta urinib ko'ring`);
+                break
+            }
+
+            if (attempts > randomNumber) {
+                alert(`${firstName} Siz kirtgan soningiz katta`)
+            }
+
+            if (attempts < randomNumber) {
+                alert(`${firstName} Siz kiritgan soningiz kichik`)
+            }
+
+            if (attempts == randomNumber) {
+                alert(`${firstName} men o'ylagan sonni ${counter} ta urinishda topdingiz`)
+            }
+        }
+    }
+
+    else {
+        alert(`${firstName} siz 5 katta son kirtmadingiz`)
+    }
+
+}
 function closs() {
     let none = document.getElementById("menu2")
     none.style.display = "none"
@@ -76,9 +118,16 @@ function btn() {
 }
 function btn2() {
     let sec1btn = document.getElementById("sec1btn")
-    sec1btn = alert("Salom bu yerda M.Khan ning qancha web sayt yasaganini ko'rishingiz mumkin")
-    sec1btn = alert("Uning uchun ong topondi menu ni bosib ushayerdan My Reposity degan yozuvni bosing")
+    sec1btn = alert("Salom bu yerda M.Khan ning qancha web sayt yasaglarini va animatsiyalar hatto oyin oynashingiz mumkin")
+    sec1btn = alert("Uning uchun ong tomondi menu ni bosib ushayerdan tanglang")
 }
+
+let headertext1 = document.getElementById("head1")
+let headertext2 = document.getElementById("head2")
+let headertext3 = document.getElementById("head3")
+headertext1.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
+headertext2.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
+headertext3.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
 
 
 
