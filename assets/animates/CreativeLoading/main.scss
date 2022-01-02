@@ -47,9 +47,8 @@
                 0 0 100px #00ff0a;
                 animation: animate 2s linear infinite;
                 animation-delay: calc(0.1s * var(--i));
-
             }
-            @keyframes animate {
+            @keyframes animate{
                 0%{
                     transform: scale(1);
                 }
