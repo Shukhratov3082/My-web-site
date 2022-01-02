@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.animation-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: #250821;
+}
+
+.animation-4 h1 {
+  color: white;
+  font-size: 55px;
+  position: absolute;
+  line-height: 80px;
+  top: 37%;
+  left: 20%;
+  text-align: center;
+  z-index: 1;
+}
+
+.animation-4 .blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.animation-4 .blob:nth-child(2) {
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+/*# sourceMappingURL=main.css.map */

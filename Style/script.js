@@ -56,15 +56,21 @@ function kechasiboldi() {
     let sarudumaloq = document.getElementById("sarudumaloq")
     sarudumaloq.style.background = "#f4d25b"
 }
+let animation = document.getElementById("animation"),
+    menu3 = document.getElementById("menu3");
+animation.addEventListener('click', function () {
+    menu3.style.display = "block";
+    menu3.style.flexWrap = "wrap";
+})
 
 let myreposity = document.getElementById("my-reposity"),
     modal = document.getElementById("menu2");
 
 myreposity.addEventListener('click', function () {
     modal.style.display = "flex";
-    modal.style.flexWrap = "wrap"
-
+    modal.style.flexWrap = "wrap";
 })
+
 let games = document.getElementById("games")
 games.onclick = function () {
     let firstName = prompt("Salom ismingizni kiriting")
@@ -107,15 +113,21 @@ games.onclick = function () {
     }
 
 }
+
 function closs() {
     let none = document.getElementById("menu2")
     none.style.display = "none"
+}
+function closs2() {
+    let none2 = document.getElementById("menu3")
+    none2.style.display = "none"
 }
 
 function btn() {
     let hedbtn = document.getElementById("head-btn")
     hedbtn = alert("Salom Sayitim Sizga Yoqti Degan umittaman")
 }
+
 function btn2() {
     let sec1btn = document.getElementById("sec1btn")
     sec1btn = alert("Salom bu yerda M.Khan ning qancha web sayt yasaglarini va animatsiyalar hatto oyin oynashingiz mumkin")

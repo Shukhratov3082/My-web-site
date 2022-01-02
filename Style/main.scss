@@ -10,4 +10,9 @@ body {
     font-family: sans-serif;
 }
 @import "sections/section1";
-@import "utils/variables"
+@import "utils/variables";
+@import "../assets/animates/CreateCSSButton/main.scss";
+@import "../assets/animates/CreativeLoading/main.scss";
+@import "../assets/animates/ReadMore/main.scss";
+@import "../assets/animates/HAPPYDIVALY/main.scss";
+@import "../assets/animates/animatecsssvgblob/main.scss";
