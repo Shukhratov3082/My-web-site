@@ -282,14 +282,6 @@
         top: 0px;
         right: 0;
         z-index: 0;
-        @media (max-width:1400px) { 
-            width: 450px;
-            height: 720px;
-          }
-          @media (max-width:1200px) { 
-            width: 400px;
-            height: 680px;
-          }
     }
    .modal{
        width: 100%;

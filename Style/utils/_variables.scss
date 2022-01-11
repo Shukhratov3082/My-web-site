@@ -7,3 +7,350 @@
         transform: scale(1.1);
     }
 }
+@media (min-width:1920px){
+    .section1{
+        padding: 35px 130px 115px 130px;
+        h1{
+                font-size: 100px;
+        }
+        p{
+            font-size: 30px;
+        }
+        button{
+            font-size: 55px;
+            margin-top: 50px;
+        }
+       
+        header{
+            margin-bottom: 120px;
+            nav a {
+                font-size: 65px;
+            }
+            button{
+                padding: 20px 50px;
+                font-size: 35px;
+            }
+       
+        }
+        #icon{
+            top: 62px;
+            right: 50px;
+            width: 85px;
+            height: 80px;
+            span:first-child{
+                width: 44px;
+                height: 4px;
+                border-radius: 10px;
+                top: 21px; 
+            }
+            span:nth-child(2){
+                width: 44px;
+                height: 4px; 
+                border-radius: 10px;
+                top: 41px;
+            }
+            span:last-child{
+                width: 44px;
+                border-radius: 10px;
+                height: 4px;
+                top: 61px;
+            }  
+           
+        }
+        #menu{
+            width: 475px;
+            right: -475px;
+            ul{
+                margin-top: 100px;
+                li{
+                    line-height: 210px;
+                    font-size: 3.3rem;
+                }
+            }
+            .moon{           
+            width: 67px;
+            top: 65px;
+            left: 40px;
+            }
+            .moon-black{           
+                width: 67px;
+                top: 65px;
+                left: 40px;
+                }
+        }
+        .active#icon span:first-child {
+            width: 63px;
+            top: 37px;
+        }
+         .active#icon span:last-child {
+            width: 63px;
+            top: 37px;
+        }
+        .komp{
+            width: 920px;
+            right: 100px;
+            top: 240px;
+        }
+        .oqdumaloq{
+            width: 100px;
+            top: 700px;
+            right: 222px;
+        }
+        .sarudumaloq{
+            width: 175px;
+            height: 175px;
+            top: 245px;
+            right: 830px;
+        }
+        .kompimg{
+            width: 400px;
+            right: 62px;
+            top: 265px;
+        }
+        .kompimg2{
+            width: 275px;
+            top: 675px;
+            right: 677px;
+        }
+        .bigdumaloq{
+            width: 600px;
+            height: 100%;
+        }
+       
+    }
+   
+}
+@media (max-width:1220px){
+.section1{
+     padding: 22px 120px 90px 100px;
+       h1{
+               font-size: 53px;
+       }
+    p{
+        margin-top: 25px;
+        font-size: 22px;
+    }
+    button{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+   
+    header{
+        margin-bottom: 75px;
+        nav a {
+            font-size: 40px;
+        }
+        button{
+           margin:0 25px 0 0;
+            padding: 15px 35px;
+            font-size: 23px;
+        }
+     }
+     #icon{
+         top: 35px;
+         width: 55px;
+         height: 55px;
+        span:first-child{
+            width: 28px;
+            height: 3px;
+            border-radius: 10px;
+            top: 14px; 
+        }
+        span:nth-child(2){
+            width: 28px;
+            height: 3px; 
+            border-radius: 10px;
+            top: 28px;
+        }
+        span:last-child{
+            width: 28px;
+            border-radius: 10px;
+            height: 3px;
+            top: 41px;
+         }  
+       
+     }
+     .komp{
+       width: 580px;
+       right: 20px;
+       top: 165px;
+     }
+    .oqdumaloq{
+        top: 455px;
+        right: 93px;
+    }
+    .sarudumaloq{
+        width: 110px;
+        height: 110px;
+        top: 160px;
+        right: 480px;
+    }
+    .kompimg{
+        width: 265px;
+        right: -5px;
+        top: 160px;
+    }
+    .kompimg2{
+        top: 456px;
+        right: 395px;
+    }
+    .kokdumaloq{
+        right: 550px;
+    }
+    .bigdumaloq{
+        width: 415px;
+        height: 100%;
+    }
+}
+}
+@media (max-width:992px){
+    .section1{
+        .bigdumaloq{
+            height: 100%;
+        }
+    }
+    
+}
+@media (max-width:768px){
+    .section1{
+        .bigdumaloq{
+            height: 100%;
+        }
+    }
+    
+}
+@media (max-width:480px){
+    .section1{
+        height: 100%;
+        padding: 15px 30px 30px 30px;
+        h1{
+                font-size: 30px;
+                margin-bottom: 0;
+                text-align: center;
+        }
+        .h1well{
+            font-size: 40px;
+        }
+     p{
+
+         text-align: center;
+     }
+     button{
+         margin-top: 270px;
+     }
+    
+      header{
+          gap: 30px;
+          justify-content: normal;
+          margin-bottom: 38px;
+          nav{
+          gap: 25px; 
+          a {
+              padding: 0 7px;
+              font-size: 25px;
+          }
+          a:last-child{
+              display: none;
+          }
+        }
+         button{
+          display: none;
+         }
+   }
+      #icon{
+          top: 15px;
+          width: 44px;
+          height: 44px;
+          right: 35px;
+         span:first-child{
+             width: 22px;
+             height: 2px;
+             border-radius: 10px;
+             top: 14px; 
+         }
+         span:nth-child(2){
+             width: 22px;
+             height: 2px; 
+             border-radius: 10px;
+             top: 22px;
+         }
+         span:last-child{
+             width: 22px;
+             border-radius: 10px;
+             height: 2px;
+             top: 30px;
+          }      
+      }
+      #menu{
+          width: 300px;
+          right: -300px;
+          ul{
+              margin-top: 40px;
+              li{
+                line-height: 140px;
+                font-size: 2.0rem;
+              }
+          }
+          .moon{
+              width: 40px;
+              top: 20px;
+          }
+          .moon-black{
+            width: 40px;
+            top: 20px;
+        }
+      }
+      .modal{
+          overflow: auto;
+      }
+        .active#icon span:first-child {
+            width: 33px;
+            top: 22px;
+        }
+        .active#icon span:last-child {
+            width: 33px;
+            top: 22px;
+        }
+      .komp{
+        width: 350px;
+        right: 52px;
+        top: 350px;
+      }
+     .oqdumaloq{
+        top: 505px;
+        right: 87px;
+     }
+     .sarudumaloq{
+        width: 90px;
+        height: 85px;
+        top: 370px;
+        right: 329px;
+     }
+     .kompimg{
+        width: 175px;
+    right: 0px;
+    top: 355px;
+     }
+     .kompimg2{
+        top: 516px;
+        right: 254px;
+        width: 135px;
+     }
+    //  .kokdumaloq{
+    //      right: 550px;
+    //  }
+        .bigdumaloq{
+            display: none;
+            height: 100%;
+        }
+    }
+    
+}
+@media (max-width:382px){
+    .section1{
+        .bigdumaloq{
+            height: 100%;
+        }
+    }
+    
+}
