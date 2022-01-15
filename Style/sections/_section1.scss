@@ -161,24 +161,8 @@
         right: 10px;
         left: 0px;
         filter: blur(5px);
-      
+
        }
-    
-          .moon{
-              position: absolute;
-              width: 48px;
-              top: 35px;
-              left: 30px;
-              
-          }
-          .moon-black{
-              position: absolute;
-              width: 48px;
-              top: 35px;
-              left: 30px;
-              display: none;
-            
-          }
      
               ul {
                   position: relative;
@@ -275,7 +259,7 @@
     }
     .bigdumaloq{
         width: 477px;
-        height: 750px;
+        height: 100%;
         position: absolute;
         background: #5956e9;
         clip-path: circle(65% at 90% 50%);

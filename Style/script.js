@@ -10,52 +10,7 @@ icon.onclick = function () {
 }
 document.querySelector('video').playbackRate = 0.4;
 
-function kechasi() {
-    let bgcolor1 = document.getElementById("bg")
-    bgcolor1.style.background = "black"
 
-    let kech = document.getElementById("moon")
-    kech.style.display = "none"
-
-    let kechbol = document.getElementById("moon-black")
-    kechbol.style.display = "block"
-
-    let menucolor = document.getElementById("menu")
-    menucolor.style.background = "#0041fa"
-
-    let buttonbg = document.getElementById("head-btn")
-    buttonbg.style.background = "red"
-
-    let bigdumaloq = document.getElementById("bigdumaloq")
-    bigdumaloq.style.background = "#13561e"
-
-    let sarudumaloq = document.getElementById("sarudumaloq")
-    sarudumaloq.style.background = "rgb(151 54 54)"
-
-
-}
-function kechasiboldi() {
-    let kechbol2 = document.getElementById("moon-black")
-    kechbol2.style.display = "none"
-
-    let kech = document.getElementById("moon")
-    kech.style.display = "block"
-
-    let bgcolor1 = document.getElementById("bg")
-    bgcolor1.style.background = "linear-gradient(264deg, rgba(19,165,204,1) 25%, rgba(0,125,255,1) 79%)"
-
-    let menucolor = document.getElementById("menu")
-    menucolor.style.background = "rgb(0, 192, 250)"
-
-    let buttonbg = document.getElementById("head-btn")
-    buttonbg.style.background = "#35d700"
-
-    let bigdumaloq = document.getElementById("bigdumaloq")
-    bigdumaloq.style.background = "#5956e9"
-
-    let sarudumaloq = document.getElementById("sarudumaloq")
-    sarudumaloq.style.background = "#f4d25b"
-}
 let animation = document.getElementById("animation"),
     menu3 = document.getElementById("menu3");
 animation.addEventListener('click', function () {
@@ -141,5 +96,37 @@ headertext1.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
 headertext2.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
 headertext3.onclick = function () { alert("Xaliberi Ishga tushirilmagan") }
 
-
+const themeBtn = document.querySelector('.c-theme-btn')
+    const changeTheme = () => {
+        document.documentElement.classList.toggle('theme--night')
+        let state = document.documentElement.classList.contains('theme--night')
+        state ? themeBtn.classList.add('is-active') : themeBtn.classList.remove('is-active')
+    }
+ 
+           
+      
+//     theme.addEventListener("click",function kechasiboldi() {
+//         let kechbol2 = document.getElementById("moon-black")
+//         kechbol2.style.display = "none"
+    
+//         let kech = document.getElementById("moon")
+//         kech.style.display = "block"
+    
+//         let bgcolor1 = document.getElementById("bg")
+//         bgcolor1.style.background = "linear-gradient(264deg, rgba(19,165,204,1) 25%, rgba(0,125,255,1) 79%)"
+    
+//         let menucolor = document.getElementById("menu")
+//         menucolor.style.background = "rgb(0, 192, 250)"
+    
+//         let buttonbg = document.getElementById("head-btn")
+//         buttonbg.style.background = "#35d700"
+    
+//         let bigdumaloq = document.getElementById("bigdumaloq")
+//         bigdumaloq.style.background = "#5956e9"
+    
+//         let sarudumaloq = document.getElementById("sarudumaloq")
+//         sarudumaloq.style.background = "#f4d25b"
+//     }
+// )
+    
 
