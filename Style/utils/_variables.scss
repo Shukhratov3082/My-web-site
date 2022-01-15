@@ -203,25 +203,11 @@
     }
 }
 }
-@media (max-width:992px){
-    .section1{
-        .bigdumaloq{
-            height: 100%;
-        }
-    }
-    
-}
-@media (max-width:768px){
-    .section1{
-        .bigdumaloq{
-            height: 100%;
-        }
-    }
-    
-}
+
+
 @media (max-width:480px){
     .section1{
-        height: 100%;
+        min-height: 855px;
         padding: 15px 30px 30px 30px;
         h1{
                 font-size: 30px;
@@ -236,7 +222,9 @@
          text-align: center;
      }
      button{
-         margin-top: 270px;
+         margin-top: 310px;
+         width: 100%;
+         font-size: 30px;
      }
     
       header{
@@ -244,14 +232,7 @@
           justify-content: normal;
           margin-bottom: 38px;
           nav{
-          gap: 25px; 
-          a {
-              padding: 0 7px;
-              font-size: 25px;
-          }
-          a:last-child{
-              display: none;
-          }
+          display: none;
         }
          button{
           display: none;
@@ -313,26 +294,21 @@
         }
       .komp{
         width: 350px;
-        right: 52px;
-        top: 350px;
+        top: 430px;
       }
      .oqdumaloq{
-        top: 505px;
-        right: 87px;
+        display: none;
      }
      .sarudumaloq{
-        width: 90px;
-        height: 85px;
-        top: 370px;
-        right: 329px;
+       display: none;
      }
      .kompimg{
         width: 175px;
     right: 0px;
-    top: 355px;
+    top: 425px;
      }
      .kompimg2{
-        top: 516px;
+        top: 550px;
         right: 254px;
         width: 135px;
      }
@@ -347,10 +323,6 @@
     
 }
 @media (max-width:382px){
-    .section1{
-        .bigdumaloq{
-            height: 100%;
-        }
-    }
+    
     
 }
