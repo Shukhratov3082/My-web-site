@@ -27,6 +27,16 @@ html,body {
   width: 100%;
   height: 100%;
 }
+.inner-header,.waves{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg);
+  color: var(--color);
+  transition: color 120ms ease-out 0s;
+}
+
 
 .section1 {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;

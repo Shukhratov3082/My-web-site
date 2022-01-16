@@ -102,6 +102,7 @@ const themeBtn = document.querySelector('.c-theme-btn')
         let state = document.documentElement.classList.contains('theme--night')
         state ? themeBtn.classList.add('is-active') : themeBtn.classList.remove('is-active')
     }
+    
  
            
       

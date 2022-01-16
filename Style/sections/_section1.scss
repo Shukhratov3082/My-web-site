@@ -1,3 +1,4 @@
+
 .section1{
     height: 100vh;
     position: relative;
@@ -84,7 +85,7 @@
   }
  }
     #icon {
-       position: absolute;
+       position: fixed;
        top: 28px;
        right: 50px;
        width: 50px;
@@ -262,186 +263,189 @@
         height: 100%;
         position: absolute;
         background: #5956e9;
-        clip-path: circle(65% at 90% 50%);
+        clip-path: circle(59% at 90% 50%);
         top: 0px;
         right: 0;
         z-index: 0;
     }
-   .modal{
-       width: 100%;
-       height: 100vh;
-       position: absolute;
-       padding: 100px 111px 200px 116px;
-       justify-content: center;
-       z-index: 100;
-       background: linear-gradient(320deg, #7ab5ff 31%, #59a2f3 54%, #9cc6fb 76%);
-       gap: 30px;
-       overflow: hidden;
-
-       .close{
-           position: absolute;
-           top: 20px;
-           right: 25px;
-           width: 35px;
-           height: 35px;
-           border-radius: 5px;
-           cursor: pointer;
-           opacity: 1;
-             span:first-child{
-                 position: absolute;
-                 width: 35px;
-                 height: 2px;
-                 top: 50%;
-                 background:red;     
-                 transform: rotate(45deg);
-             }
-         
-             span:last-child{
-                 position: absolute;
-                 width: 35px;
-                 height: 2px;
-                 background:red;
-                 top: 50%;
-                 transform: rotate(-45deg);       
-             } 
-        }
-      
-        .snowflake {
-            --size: 1vw;
-            width: var(--size);
-            height: var(--size);
-            background: white;
-            border-radius: 50%;
-            position: absolute;
-            top: -5vh;
-            animation: snowfall 5s linear infinite;
-
-          }
-          @keyframes snowfall {
-            0% {
-              transform: translate3d(0, 0, 0);
-            }
-            100% {
-              transform: translate3d(0, 110vh, 0);
-            }
-          }
-          @for $i from 1 through 50 {
-            .snowflake:nth-child(#{$i}) {
-              --size: #{random(5) * 0.2}vw; /* randomize size! */
-              left: #{random(100)}vw;
-              animation: snowfall #{5 + random(10)}s linear infinite;
-            }
-          }
-
-        .saytlar1{
-         width: 300px;
-         height: 280px;
-         padding: 10px;
-         text-align: center;
-         background: linear-gradient(46deg, #17deeb8f 0%, #4981f58f 100%);
-         border-radius: 15px;
-             &:hover{
-                box-shadow: 0 0 18px 0px #00ff37;
-            }
-            img{
-            width: 270px;
-            height: 67%;
-            border-radius: 10px;
-            opacity: 0.7;
-            &:hover{
-                opacity: 1;
-            }
-            }
-
-
-            a{
-                text-decoration: none;
-                line-height: 75px;
-                font-weight: bold;
-                font-size: 35px;
-                font-family: cursive;
-                animation-name: textanimation;
-                animation-iteration-count: infinite;
-                animation-duration: 4s;
-                @keyframes textanimation {
-                    0%{
-                        color: rgb(0, 47, 255);
-                    }
-                    10%{
-                        color: rgb(0, 81, 255);
-                    }
-                    20%{
-                        color: rgb(0, 89, 255);
-                    }
-                    30%{
-                        color: rgb(0, 119, 255);
-                    }
-                    40%{
-                        color: rgb(0, 102, 255);
-                    }
-                    50%{
-                        color: rgb(0, 102, 255);
-                    }
-                    60%{
-                        color: rgb(0, 81, 255);
-                    }
-                    70%{
-                        color: rgb(0, 60, 255);
-                    }
-                    80%{
-                        color: rgb(0, 47, 255);
-                    }
-                    90%{
-                        color: rgb(0, 60, 255);
-                    }
-                    100%{
-                        color: rgb(0, 47, 255);  
-                    }
-                }
-            }
-        }
-    }  
+  
     #menu3{
         overflow: auto;
     }
-    .animate{
-        width: 100%;
-        height: 100vh;
-        background: red;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 101;
-        display: none;
-       
-        .close2{
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            width: 35px;
-            height: 35px;
-            border-radius: 5px;
-            cursor: pointer;
-            background: #000;
-            opacity: 1;
-              span:first-child{
-                  position: absolute;
-                  width: 35px;
-                  height: 2px;
-                  top: 50%;
-                  background:red;     
-                  transform: rotate(45deg);
-              }
-          
-              span:last-child{
-                  position: absolute;
-                  width: 35px;
-                  height: 2px;
-                  background:red;
-                  top: 50%;
-                  transform: rotate(-45deg);       
-              } 
+
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding: 100px 111px 200px 116px;
+    justify-content: center;
+    z-index: 100;
+    background: linear-gradient(320deg, #7ab5ff 31%, #59a2f3 54%, #9cc6fb 76%);
+    gap: 30px;
+    overflow: hidden;
+
+    .close{
+        position: fixed;
+        top: 20px;
+        right: 45px;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 1;
+          span:first-child{
+              position: absolute;
+              width: 35px;
+              height: 2px;
+              top: 50%;
+              background:red;     
+              transform: rotate(45deg);
+          }
+      
+          span:last-child{
+              position: absolute;
+              width: 35px;
+              height: 2px;
+              background:red;
+              top: 50%;
+              transform: rotate(-45deg);       
+          } 
+     }
+   
+     .snowflake {
+         --size: 1vw;
+         width: var(--size);
+         height: var(--size);
+         background: white;
+         border-radius: 50%;
+         position: absolute;
+         top: -5vh;
+         animation: snowfall 5s linear infinite;
+
+       }
+       @keyframes snowfall {
+         0% {
+           transform: translate3d(0, 0, 0);
+         }
+         100% {
+           transform: translate3d(0, 110vh, 0);
+         }
+       }
+       @for $i from 1 through 50 {
+         .snowflake:nth-child(#{$i}) {
+           --size: #{random(5) * 0.2}vw; /* randomize size! */
+           left: #{random(100)}vw;
+           animation: snowfall #{5 + random(10)}s linear infinite;
+         }
+       }
+
+     .saytlar1{
+      width: 300px;
+      height: 280px;
+      padding: 10px;
+      text-align: center;
+      background: linear-gradient(46deg, #17deeb8f 0%, #4981f58f 100%);
+      border-radius: 15px;
+          &:hover{
+             box-shadow: 0 0 18px 0px #00ff37;
+         }
+         img{
+         width: 270px;
+         height: 67%;
+         border-radius: 10px;
+         opacity: 0.7;
+         &:hover{
+             opacity: 1;
+         }
          }
 
-     } 
-}
+
+         a{
+             text-decoration: none;
+             line-height: 75px;
+             font-weight: bold;
+             font-size: 35px;
+             font-family: cursive;
+             animation-name: textanimation;
+             animation-iteration-count: infinite;
+             animation-duration: 4s;
+             @keyframes textanimation {
+                 0%{
+                     color: rgb(0, 47, 255);
+                 }
+                 10%{
+                     color: rgb(0, 81, 255);
+                 }
+                 20%{
+                     color: rgb(0, 89, 255);
+                 }
+                 30%{
+                     color: rgb(0, 119, 255);
+                 }
+                 40%{
+                     color: rgb(0, 102, 255);
+                 }
+                 50%{
+                     color: rgb(0, 102, 255);
+                 }
+                 60%{
+                     color: rgb(0, 81, 255);
+                 }
+                 70%{
+                     color: rgb(0, 60, 255);
+                 }
+                 80%{
+                     color: rgb(0, 47, 255);
+                 }
+                 90%{
+                     color: rgb(0, 60, 255);
+                 }
+                 100%{
+                     color: rgb(0, 47, 255);  
+                 }
+             }
+         }
+     }
+ }   
+.animate{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: none;
+   
+    .close2{
+        position: fixed;
+        top: 20px;
+        right: 45px;
+        width: 35px;
+        z-index: 10;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #000;
+        opacity: 1;
+          span:first-child{
+              position: absolute;
+              width: 35px;
+              height: 2px;
+              top: 50%;
+              background:red;     
+              transform: rotate(45deg);
+          }
+      
+          span:last-child{
+              position: absolute;
+              width: 35px;
+              height: 2px;
+              background:red;
+              top: 50%;
+              transform: rotate(-45deg);       
+          } 
+     }
+
+ } 
