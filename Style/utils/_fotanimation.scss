@@ -22,9 +22,9 @@ p {
   text-align:center;
 
 .inner-header {
-  height:65vh;
+  height:100%;
   width:100%;
-  padding: 100px 0px 0 0px;
+  padding: 100px 0 40px 0;
   color: white;
   .simple{
     display: flex;
@@ -83,7 +83,7 @@ p {
 
 .content {
   display: flex;
-  height:40vh;
+  height:100%;
   padding: 100px 0 0 10px;
   gap: 30px;
   justify-content: center;
@@ -149,7 +149,7 @@ p {
     display: flex;
     flex-direction: column;
       gap: 40px;
-    height:30vh;
+  
     .fotp{
       top: 10px;
       font-size: 20px;
